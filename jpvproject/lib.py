@@ -47,11 +47,18 @@ def clean_data(data):
     data.loc[:, 'Frequency'] = data['Frequency'].map(drows)
     return data
 
+def try_me(name='Jonathan'):
+    print(f'hello this {name}')
+
 
 if __name__ == '__main__':
     # For introspections purpose to quickly get this functions on ipython
     import jpvproject
-    folder_source, _ = split(jpvproject.__file__)
-    df = pd.read_csv('{}/data/data.csv.gz'.format(folder_source))
-    clean_data = clean_data(df)
-    print(' dataframe cleaned')
+    #folder_source, _ = split(jpvproject.__file__)
+   #df = pd.read_csv('{}/data/data.csv.gz'.format(folder_source))
+    #clean_data = clean_data(df)
+    print(try_me('Julio'))
+
+
+
+
